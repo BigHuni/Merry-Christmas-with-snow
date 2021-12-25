@@ -7,7 +7,7 @@ body {
   .card {
     display: flex;
     flex-direction: column;
-    top: 50vh;
+    top: 10rem;
     left: 50vh;
     width: 50rem;
     height: auto;
@@ -24,7 +24,7 @@ body {
   }
   
   .card p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
   }
   
@@ -33,7 +33,7 @@ body {
     top: 50%;
     left: 0;
     content: '';
-    width: 100%;
+    width: 80%;
     height: 20px;
     background-image: linear-gradient(-45deg, #0c6333 25%, #d61334 25%, #d61334 50%, #0c6333 50%, #0c6333 75%, #d61334 75%, #d61334 100%);
     background-size: 85px 85px;
