@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="card">
+          <h1>Merry Christmas</h1>
+            <p>파이썬은 1989년 12월 크리스마스를 심심하지 않게 보내려고</p>
+            <p>네덜란드 귀도 반 로섬(Guido van Rossum)이 혼자 만들었다.</p>
+            <p>나 대훈 허(Daehun Heo)도 HTML, CSS, JavaScript 친구들과</p>
+            <p>함께라면 이번 2021년 12월 크리스마스가 심심하지 않다.</p>
+        </div>
+    <script>
+        function createSnow() {
+            const el = document.createElement("div");
+            el.classList.add('snow');
+            el.style.marginLeft = randomPosition() + 'px';
+            document.body.appendChild(el);
+        }
+        function randomPosition() {
+            return Math.floor(Math.random() * window.innerWidth);
+        }
+        for(let i=0; i<300; i++) {
+            createSnow();
+        }
+    </script>
+</body>
+</html>
